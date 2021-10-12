@@ -1,0 +1,73 @@
+.card > .card__image > img {
+    width: 125px;
+    height: 125px;
+    float: left;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .card__details > p {
+    padding: 0;
+    margin: 0;
+  }
+  .card__details {
+    float: right !important;
+    padding-left: 20px;
+    flex: 1;
+  }
+  .span1 {
+    padding-left: 5px;
+  }
+  
+  .card__details > .heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+.quantity{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.quantity input{
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    color: #0000;
+    font-weight: 300;
+}
+
+.add{
+    background-color: white;
+    border: 1px solid black;
+    border-right: 1px solid white!important;
+    
+}
+
+.countminus{
+    background-color: white;
+    color: red!important;
+    border: 1px solid black;
+    
+}
+.countplus{
+    background-color: white;
+    color: red;
+    border: 1px solid black;
+    
+}
+
+.count{
+    background-color: white;
+}
+
+
+

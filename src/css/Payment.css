@@ -1,0 +1,142 @@
+.main{
+    display: flex;
+}
+.part1{
+    width: 65%;
+    border: 2px solid #183454;
+    border-radius: 5px;
+    margin:20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.part2{
+    border:2px solid #183454;
+    border-radius: 5px;
+    width: 35%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sub-part1{
+    display: inline-flex;
+}
+.Heading{
+    font-size: 35px;
+    color: #183454;
+    font-weight: bold;
+    padding: 10px;
+}
+.subheading{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+img{
+    height: 90px;
+    align-items: center;
+    width: 90px
+}
+.card{
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 510px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.sub1-part1{
+    background-color: #183454;
+    width: 250px;
+}
+.content{
+    padding: 10px;
+    padding-left: 20px;
+}
+.type{
+    font-weight: bold;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+}
+a:hover{
+    color:green;
+}
+.button{
+    background-color:#4498f8 ;
+    border: none;
+    color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom:5px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.SidebarList{
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+.SidebarList .row{
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.SidebarList .row:hover{
+    cursor: pointer;
+    background-color:#132a44 ;
+}
+.row #icon{
+    flex:30%;
+    display: grid;
+    place-items: center;
+}
+.row #title{
+    flex: 70%;
+}
+.SidebarList #active{
+    background-color: #132a44;
+}
+.time{
+    font-weight: bold;
+    padding: 5px;
+}
+.back_button{
+    background-color:#183454 ;
+    border: none;
+    color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom:5px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left:20px;
+}
+.foodCardSub{
+    font-size: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
