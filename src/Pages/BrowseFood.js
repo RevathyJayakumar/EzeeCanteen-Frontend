@@ -93,10 +93,6 @@ function BrowseFood(props){
             setFullName({ fullname: loginName });
             setemail({ email: email })
         }
-        Axios.get('http://localhost:3001/api/get').then((response) => {
-            setMenuList(response.data)
-        });
-    }, []);
     const [users, setUsers] = useState([]);
     useEffect(() => {
         Axios.get('http://localhost:3001/id').then((response) => {
