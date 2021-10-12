@@ -59,7 +59,7 @@ function BrowseFood(props){
                 Totalcount++;
             }
             else if(element[5]==='n' && element[2]===1){
-                Totalcount=Totalcount+1;
+                Totalcount=Totalcount-1;
             }    
         }
     });
