@@ -84,19 +84,6 @@ function BrowseFood(props){
             setSnackList(response.data)
         });
     }, []);
-    selectList.forEach(element => {
-        if (element === undefined) {
-            console.log("nothing");
-        }
-        else {
-            if (element[5] === 'p') {
-                grandTotal = grandTotal + element[3];
-            }
-            else if (element[5] === 'n') {
-                grandTotal = grandTotal - element[3];
-            }
-        }
-    });
     const [loginName, setFullName] = useState();
     const [email, setemail] = useState()
     useEffect(() => {
