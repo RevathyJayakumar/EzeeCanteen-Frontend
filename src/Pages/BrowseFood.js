@@ -56,7 +56,7 @@ function BrowseFood(props){
         }
         else{
             if(element[5]==='p'){
-                Totalcount++;
+                Totalcount = Totalcount+1;
             }
             else if(element[5]==='n' && element[2]===1){
                 Totalcount=Totalcount-1;
