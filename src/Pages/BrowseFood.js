@@ -14,6 +14,7 @@ function BrowseFood(props){
     var grandTotal = 0;
     var Totalcount=0;
     const [orderNo, setOrderNo] = useState(0);
+    //Getting orderno
     useEffect(() => {
         Axios.get('http://localhost:3001/count').then((response) => {
             setOrderNo(response.data)
@@ -69,16 +70,19 @@ function BrowseFood(props){
     const [menuList, setMenuList] = useState([])
     const [lunchList, setLunchList] = useState([])
     const [snackList, setSnackList] = useState([])
+    //Getting breakfast menu
     useEffect(()=>{
         Axios.get('http://localhost:3001/api/get/breakfast').then((response)=>{
             setMenuList(response.data)
         });
     },[]);
+    //Getting lunch menu
     useEffect(() => {
         Axios.get('http://localhost:3001/api/get/lunch').then((response) => {
             setLunchList(response.data)
         });
     }, []);
+    //Getting snacks menu
     useEffect(() => {
         Axios.get('http://localhost:3001/api/get/snacks').then((response) => {
             setSnackList(response.data)
@@ -86,6 +90,7 @@ function BrowseFood(props){
     }, []);
     const [loginName, setFullName] = useState();
     const [email, setemail] = useState()
+    //Setting fullname and email
     useEffect(() => {
         if (props.location && props.location.state && props.location.state.email) {
             const email = props.location.state.email;
@@ -94,6 +99,7 @@ function BrowseFood(props){
             setemail({ email: email })
         }
     const [users, setUsers] = useState([]);
+    //Getting userid from Sign up table
     useEffect(() => {
         Axios.get('http://localhost:3001/id').then((response) => {
             setUsers(response.data)
@@ -109,6 +115,7 @@ function BrowseFood(props){
     });
     const [id, setId] = useState(0);
     let dineOption = 'snacks';
+    //Setting dineoptions
     const setDineOption = () => {
         const d = new Date();
         var h = d.getHours();
