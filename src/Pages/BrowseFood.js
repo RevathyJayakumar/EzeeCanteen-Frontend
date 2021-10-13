@@ -99,7 +99,7 @@ function BrowseFood(props){
             setemail({ email: email })
         }
     const [users, setUsers] = useState([]);
-    //Getting userid from Sign up table
+    //Getting row from Sign up table which matches the email
     useEffect(() => {
         Axios.get('http://localhost:3001/id').then((response) => {
             setUsers(response.data)
