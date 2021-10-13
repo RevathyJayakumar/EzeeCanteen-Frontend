@@ -36,7 +36,8 @@ function BrowseFood(props){
     const handleQuery=(id,names,quantity,total,price,np)=>{
         const newList=[...selectList];
         newList[id] = [id,names,quantity,total,price,np];
-        setSelectList(newList);        
+        setSelectList(newList);   
+        set();
     }
     selectList.forEach(element => {
         if(element===undefined){
